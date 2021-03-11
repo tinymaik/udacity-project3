@@ -21,7 +21,7 @@ services:
       AWS_PROFILE: $AWS_PROFILE
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
-      URL: "http://localhost:8100"
+      URL: $URL
   udagram-api-feed:
     image: klastrumji/udacity-udagram-api-feed:0.0.1
     volumes:

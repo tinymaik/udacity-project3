@@ -17,9 +17,9 @@ before_install:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t ./udacity-project3/src/udagram-api-feed .
-  - docker build -t ./udacity-project3/src/udagram-api-user .
-  - docker build -t ./udacity-project3/src/udagram-frontend .
+  - docker build -t ./src/udagram-api-feed .
+  - docker build -t ./src/udagram-api-user .
+  - docker build -t ./src/udagram-frontend .
   - docker tag udacity-udagram-reverseproxy:latest klastrumji/udacity-udagram-reverseproxy:latest
   - docker tag udacity-udagram-api-feed:latest klastrumji/udacity-udagram-api-feed:latest
   - docker tag udacity-udagram-api-user:latest klastrumji/udacity-udagram-api-user:latest
